@@ -11,16 +11,41 @@
 
 <body>
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <section class="user-choice">
-        <div class="game-card scissors"></div>
-        <div class="game-card paper"></div>
-        <div class="game-card rock"></div>
-        <div class="game-card lizard"></div>
-        <div class="game-card spock"></div>
-    </section>
-
+    <!--Score counter-->
+    <div class="main-container">
+        <section class="score-counter">
+            <div class="user-score">
+                <div class="score-title">User Score</div>
+                <div class="score-count"></div>
+            </div>
+            <div class="computer-score">
+                <div class="score-title">Computer Score</div>
+                <div class="score-count"></div>
+            </div>
+        </section>
+        <!--Selection area-->
+        <section class="user-choice">
+            <div class="game-card rock"></div>
+            <div class="game-card paper"></div>
+            <div class="game-card scissors"></div>
+            <div class="game-card lizard"></div>
+            <div class="game-card spock"></div>
+        </section>
+        <!--Rules Button & Modal-->
+        <button class="rules-btn">Rules</button>
+        <div class="modal-bg"></div>
+        <div class="modal">
+            <span class="close">
+                <img src="/images/icon-close.svg" alt="">
+            </span>
+            <div class="title">Rules</div>
+            <div class="content">
+                <img src="/images/image-rules-bonus.svg" alt="">
+            </div>
+        </div>
+    </div>
     <!-- JavaScript -->
-    <script src="assets/js/script.js"></script> 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
