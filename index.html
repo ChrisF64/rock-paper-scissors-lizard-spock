@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <!--Score counter-->
-    <div class="main-container">
+    
+    <div class="flex-column main-container">
+        <h1>ROCK, PAPER, SCISSORS, LIZARD, SPOCK</h1>
+        <!--Score counter-->
         <section class="score-counter">
-            <div class="user-score">
-                <div class="score-title">User Score</div>
+            <div class="user-score flex-column">
+                <div class="score-title">Your Score</div>
                 <div class="score-count"></div>
             </div>
-            <div class="computer-score">
+            <div class="computer-score flex-column">
                 <div class="score-title">Computer Score</div>
                 <div class="score-count"></div>
             </div>
         </section>
+
         <!--User Choice-->
         <section class="user-choice">
             <div class="game-card rock"><img src="assets/images/rock.png" alt="rock image"></div>
@@ -32,34 +34,35 @@
             <div class="game-card spock"><img src="assets/images/spock.png" alt="spock image"></div>
         </section>
 
-        <div class="section picked hidden">
-            <div class="choice">
-                <p>YOU CHOSE</p>
+        <div class="picked flex-row hidden">
+            <div class="choice flex-column">
+                <p>YOU PICKED</p>
                 <div class="user-pick"></div>
             </div>
-            <div class="result hidden">
+            <div class="result ">
                 <div class="title">YOU LOSE</div>
                 <button>PLAY AGAIN</button>
             </div>
-            <div class="choice">
-                <p>COMPUTER CHOSE</p>
+            <div class="choice flex-column">
+                <p>COMPUTER PICKED</p>
                 <div class="computer-pick"></div>
             </div>
         </div>
-
-        <!--Rules Button & Modal-->
-        <button class="rules-btn">Rules</button>
-        <div class="modal-bg"></div>
-        <div class="modal">
-            <span class="close">
-                <img src="assets/images/close-x.svg" alt="close icon">
-            </span>
-            <div class="title">Rules</div>
-            <div class="content">
-                <img src="/images/image-rules-bonus.svg" alt="">
-            </div>
-        </div>
     </div>
+
+    <!--Rules Button & Modal-->
+    <button class="rules-btn" data-modal-target="#modal">RULES</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">RULES</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <img src="assets/images/rules.png" alt="rules image" width="470px">
+    </div>
+  </div>
+  <div id="overlay"></div>
+
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
