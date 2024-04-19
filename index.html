@@ -4,64 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors-Lizard-Spock</title>
     <!--CSS Style Sheet-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Rock-Paper-Scissors-Lizard-Spock</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x1692" href="assets/images/Favicon/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/Favicon/favicon-512x512.png">
 </head>
 
 <body>
-    
+    <h1>ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+    <p>First to 10 wins!</p>
+    <!--Score counter-->
     <div class="flex-column main-container">
-        <h1>ROCK, PAPER, SCISSORS, LIZARD, SPOCK</h1>
-        <!--Score counter-->
-        <section class="score-counter">
+        <div class="score-counter">
             <div class="user-score flex-column">
                 <div class="score-title">Your Score</div>
-                <div class="score-count"></div>
+                <div class="score-count">0</div>
             </div>
             <div class="computer-score flex-column">
                 <div class="score-title">Computer Score</div>
-                <div class="score-count"></div>
-            </div>
-        </section>
-
-        <!--User Choice-->
-        <section class="user-choice">
-            <div class="game-card rock"><img src="assets/images/rock.png" alt="rock image"></div>
-            <div class="game-card paper"><img src="assets/images/paper.png" alt="paper image"></div>
-            <div class="game-card scissors"><img src="assets/images/scissors.png" alt="scissors image"></div>
-            <div class="game-card lizard"><img src="assets/images/lizard.png" alt="lizard image"></div>
-            <div class="game-card spock"><img src="assets/images/spock.png" alt="spock image"></div>
-        </section>
-
-        <div class="picked flex-row hidden">
-            <div class="choice flex-column">
-                <p>YOU PICKED</p>
-                <div class="user-pick"></div>
-            </div>
-            <div class="result ">
-                <div class="title">YOU LOSE</div>
-                <button>PLAY AGAIN</button>
-            </div>
-            <div class="choice flex-column">
-                <p>COMPUTER PICKED</p>
-                <div class="computer-pick"></div>
+                <div class="score-count">0</div>
             </div>
         </div>
+        <div id="button-area">
+            <span id="start-button">
+                <button class="btn" id="start" aria-label="Click here to start game">Start</button>
+            </span>
+            <span id="quit-button">
+                <button class="btn" id="quit" aria-label="Click here to quit game">Quit</button>
+            </span>
+            <span id="reset-button">
+                <button class="btn" id="reset" aria-label="Click here to reset game">Reset</button>
+            </span>
+            <span id="rules-button">
+                <button class="btn" data-modal-target="#modal" aria-label="Click to view rules">RULES</button>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">RULES</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/rules.png" alt="rules image" width="470px">
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </span>
+        </div>
+        <!--User Selection-->
+        <div id="choose-area">
+            <div>
+                <p class="selection">Rock</p>
+                <div class="game-card rock"><img src="assets/images/rock.png" alt="rock image"></div>
+            </div>
+            <div>
+                <p class="selection">Paper</p>
+                <div class="game-card paper"><img src="assets/images/paper.png" alt="paper image"></div>
+            </div>
+            <div>
+                <p class="selection">Scissors</p>
+                <div class="game-card scissors"><img src="assets/images/scissors.png" alt="scissors image"></div>
+            </div>
+            <div>
+                <p class="selection">Lizard</p>
+                <div class="game-card lizard"><img src="assets/images/lizard.png" alt="lizard image"></div>
+            </div>
+            <div>
+                <p class="selection">Spock</p>
+                <div class="game-card spock"><img src="assets/images/spock.png" alt="spock image"></div>
+            </div>
+        </div>
+        <div id="result">
+            <p id="result-para">Click the Start button to begin!</p>
+        </div>
+        <div id="game-area">
+            <div class="game-container">
+                <p>Player</p>
+                <div id="player-image"></div>
+            </div>
+            <div class="game-container">
+                <p>Computer</p>
+                <div id="computer-image"></div>
+            </div>
+        </div>
+
     </div>
 
-    <!--Rules Button & Modal-->
-    <button class="rules-btn" data-modal-target="#modal">RULES</button>
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title">RULES</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-        <img src="assets/images/rules.png" alt="rules image" width="470px">
-    </div>
-  </div>
-  <div id="overlay"></div>
+
 
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
