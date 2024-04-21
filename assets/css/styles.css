@@ -381,13 +381,14 @@ body {
     h1 {
         margin: 0px 15px;
     }
-    
+
     body>p {
         width: 80%;
         margin: auto;
     }
 
-    .user-score, .computer-score {
+    .user-score,
+    .computer-score {
         padding: 0px;
         width: 115px;
         height: 125px;
@@ -413,10 +414,18 @@ body {
         width: 75px;
     }
 
+    #rock:hover {
+        background-size: 104%;
+    }
+
     #paper {
         background-size: 60px 60px;
         height: 75px;
         width: 75px;
+    }
+
+    #paper:hover {
+        background-size: 104%;
     }
 
     #scissors {
@@ -425,16 +434,28 @@ body {
         width: 75px;
     }
 
+    #scissors:hover {
+        background-size: 104%;
+    }
+
     #lizard {
         background-size: 60px 60px;
         height: 75px;
         width: 75px;
     }
 
+    #lizard:hover {
+        background-size: 104%;
+    }
+
     #spock {
         background-size: 60px 60px;
         height: 75px;
         width: 75px;
+    }
+
+    #spock:hover {
+        background-size: 104%;
     }
 
     #result-area p {
@@ -451,6 +472,10 @@ body {
         width: 90%;
     }
 
+    .game-container {
+        margin: 0 15px;
+    }
+
     #player-image {
         height: 100px;
         width: 100px;
@@ -460,4 +485,9 @@ body {
         height: 100px;
         width: 100px;
     }
+
+    .modal-image>img {
+        width: 300px;
+    }
+
 }
