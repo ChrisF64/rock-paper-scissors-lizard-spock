@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock online game">
+    <meta name="keywords" content="Game, Big Bang Theory, RPSLS">
     <title>Rock-Paper-Scissors-Lizard-Spock</title>
     <!--CSS Style Sheet-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -15,18 +17,20 @@
 </head>
 
 <body>
+    <!-- Header -->
     <h1>ROCK PAPER SCISSORS LIZARD SPOCK</h1>
-    <p>First to 10 wins!</p>
-    <!--Score counter-->
+    <p>First to 5 wins!</p>
+
+    <!--Score counter area-->
     <div class="flex-column main-container">
         <div class="score-counter">
             <div class="user-score flex-column">
                 <div class="score-title">Your Score</div>
-                <div class="score-count">0</div>
+                <div id="pScore">0</div>
             </div>
             <div class="computer-score flex-column">
                 <div class="score-title">Computer Score</div>
-                <div class="score-count">0</div>
+                <div id="cScore">0</div>
             </div>
         </div>
         <div id="button-area">
@@ -39,6 +43,8 @@
             <span id="reset-button">
                 <button class="btn" id="reset" aria-label="Click here to reset game">Reset</button>
             </span>
+
+            <!-- Rules button and Modal trigger-->
             <span id="rules-button">
                 <button class="btn" data-modal-target="#modal" aria-label="Click to view rules">RULES</button>
                 <div class="modal" id="modal">
@@ -46,37 +52,45 @@
                         <div class="title">RULES</div>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
-                    <div class="modal-body">
-                        <img src="assets/images/rules.png" alt="rules image" width="470px">
+                    <div class="modal-image">
+                        <img src="assets/images/rules.png" alt="rules image" width="400px">
+                    </div>
+                    <div id="modal-body">
+                        <p>Click Start button to begin game.</p>
+                        <p>Click Quit button to end game at any time.</p>
+                        <p>When game has ended, click Reset button to start over.</p>
                     </div>
                 </div>
                 <div id="overlay"></div>
             </span>
         </div>
+
         <!--User Selection-->
         <div id="choose-area">
             <div>
                 <p class="selection">Rock</p>
-                <div class="game-card rock"><img src="assets/images/rock.png" alt="rock image"></div>
+                <button class="button" id="rock" aria-label="Click to choose rock"></button>
             </div>
             <div>
                 <p class="selection">Paper</p>
-                <div class="game-card paper"><img src="assets/images/paper.png" alt="paper image"></div>
+                <button class="button" id="paper" aria-label="Click to choose paper"></button>
             </div>
             <div>
                 <p class="selection">Scissors</p>
-                <div class="game-card scissors"><img src="assets/images/scissors.png" alt="scissors image"></div>
+                <button class="button" id="scissors" aria-label="Click to choose scissors"></button>
             </div>
             <div>
                 <p class="selection">Lizard</p>
-                <div class="game-card lizard"><img src="assets/images/lizard.png" alt="lizard image"></div>
+                <button class="button" id="lizard" aria-label="Click to choose lizard"></button>
             </div>
             <div>
                 <p class="selection">Spock</p>
-                <div class="game-card spock"><img src="assets/images/spock.png" alt="spock image"></div>
+                <button class="button" id="spock" aria-label="Click to choose spock"></button>
             </div>
         </div>
-        <div id="result">
+        
+        <!-- Game Result area -->
+        <div id="result-area">
             <p id="result-para">Click the Start button to begin!</p>
         </div>
         <div id="game-area">
@@ -89,10 +103,7 @@
                 <div id="computer-image"></div>
             </div>
         </div>
-
     </div>
-
-
 
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
