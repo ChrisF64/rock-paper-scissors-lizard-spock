@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors-Lizard-Spock
 
-![Rock-Paper-Scissors-Lizard-Spock Mockup Images](assets/readme-media/responsive.png)
+![Rock-Paper-Scissors-Lizard-Spock Mockup Images](assets/images/readme-media/responsive.png)
 
 [View the live project here](https://chrisf64.github.io/rock-paper-scissors-lizard-spock/)
 
@@ -57,8 +57,8 @@ The web based game has a very simple structure of just one page, with a modal po
 #### Skeleton
 Wireframes were made to showcase the appearance of the site. The wireframes were created using a desktop version of [Balsamiq](https://balsamiq.com/).
 
-![Wireframe 1](assets/readme-media/landing-page.png)
-![Wireframe 2](assets/readme-media/modal.png)
+![Wireframe 1](assets/images/readme-media/landing-page.png)
+![Wireframe 2](assets/images/readme-media/modal.png)
 
 [Back to top](#rock-paper-scissors-lizard-spock)
 
@@ -76,7 +76,7 @@ The modal / rules image was created by the developer in Adobe Illustrator, using
 
 ## Features
 The game page has been split into several sections which has distinct purposes. See image below for diagram:
-![Explanation of Rock, Paper, Scissors, Lizard, Spock game area](assets/readme-media/markup.png)
+![Explanation of Rock, Paper, Scissors, Lizard, Spock game area](assets/images/readme-media/markup.png)
 
 ### Score counter area: 
 The scores are displayed here in a simple counter.
@@ -183,7 +183,7 @@ The site was then run through Lighthouse with particular focus on Accessibility 
 
 - Game page
 
-    ![Lighthouse results](assets/readme-media/lighthouse.png)
+    ![Lighthouse results](assets/images/readme-media/lighthouse.png)
 
 ### User testing 
 My wife, daughter, friends and mentor Koko reviewed the site and documentation and flagged any user experience issues. Their helpful advice throughout the process led to a few small UX changes in order to create a better experience. 
