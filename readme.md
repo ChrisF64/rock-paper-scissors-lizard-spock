@@ -33,8 +33,8 @@ This website based game has been built to complete the second project in the Ful
 Target audience for this game are predominantly fans of The Big Bang Theory, users who will already be familiar with the game. The site is intended to allow them to play the game as it was seen in the show, against a randomised computer choice.
 
 The user goals for new and returning users are the same:
-- As a user, I want to play the game as seen on TV
-- As a user, I want the game to have a goal to aim for with a tally of scores
+- As a current user, I want to play the game as seen on TV
+- As a current and new user, I want the game to have a goal to aim for with a tally of scores
 - As a new user, I want to access the rules of the game
 
 ### Development-Planes
@@ -59,6 +59,9 @@ Wireframes were made to showcase the appearance of the site. The wireframes were
 
 ![Wireframe 1](assets/images/readme-media/landing-page.png)
 ![Wireframe 2](assets/images/readme-media/modal.png)
+
+## Surface:
+Once the structure and wireframe have been agreed, the look and feel of the site can be developed. This may need to align to branding but in the case of this site there are no commercial requirements. 
 
 [Back to top](#rock-paper-scissors-lizard-spock)
 
@@ -104,7 +107,7 @@ The player and computer choices are displayed here next to each other for each r
 [Back to top](#rock-paper-scissors-lizard-spock)
 
 ## Issues and Bugs 
-No noteworthy bugs or issues were found during development.
+During testing, it was discovered that although the game was set to finish when either player or computer reaches a score of 5, the winner was not declared until the next round was played. If the next round was a draw, another round needed to be played until either player or computer won. This was easily remedied by adjusting the function assigned to updating the score and setting it to check if the current score is equal to the defined max score.
 
 ## Technologies Used
 ### Main Languages Used
@@ -134,9 +137,11 @@ Landing page:
 - Initial instruction to click the start button displayed as expected 
 - Game area is blank as expected
 - Scores are both reading 0
+  ![Landing Page](assets/images/readme-media/before.png)
 
 Start button clicked:
 - Start button is replaced with Quit button 
+  ![]
 - Instruction changes, displaying correct message 
 - Game area displaying message in "Computer" choice area with appropriate timer delay 
 

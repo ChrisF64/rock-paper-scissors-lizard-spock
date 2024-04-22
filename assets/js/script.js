@@ -415,7 +415,7 @@ function playerScore() {
 
 function computerScore() {
     let cScore = document.getElementById("cScore").innerText;
-    console.log(cScore, "computer-score");
+    console.log(cScore, maxScore, "computer-score");
 
     if (cScore < 5) {
         document.getElementById("cScore").innerText = ++cScore;
