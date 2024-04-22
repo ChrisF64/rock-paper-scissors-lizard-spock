@@ -137,24 +137,29 @@ Landing page:
 - Initial instruction to click the start button displayed as expected 
 - Game area is blank as expected
 - Scores are both reading 0
-  ![Landing Page](assets/images/readme-media/before.png)
+
+![Landing Page](assets/images/readme-media/before.png)
 
 Start button clicked:
 - Start button is replaced with Quit button 
-  ![]
-- Instruction changes, displaying correct message 
-- Game area displaying message in "Computer" choice area with appropriate timer delay 
+- Instruction changes, displaying correct message
 
-Game begins with player making first selection, for this instance Player chooses rock, Computer chooses lizard:
+![Quit button showing](assets/images/readme-media/start-game.png)
+
+Game begins with player making first selection, for this instance Player chooses scissors, Computer chooses paper:
 - Correct message is displayed with correct border colour 
 - Correct images are displayed in the game area
 - Player wins and therefore computer score is raised to 1
+
+![During game](assets/images/readme-media/during.png)
 
 Game continues until one player reaches 5 wins, for this instance computer wins:
 - Results message, game images and score counter checked for each round played
 - Correct results message and fill colour displayed for computer winning
 - Quit button replaced with reset button
 - Player choice buttons locked so game cannot continue
+
+![Winner](assets/images/readme-media/player-wins.png)
 
 Game reset:
 - Upon clicking the reset button, game starts again from the beginning
