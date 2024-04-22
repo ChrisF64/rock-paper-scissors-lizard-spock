@@ -210,9 +210,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 - Initial images found free on Google images. Images then manipulated in Adobe Illustrator and colours changed as needed by developer.
 
 ### Code 
-The developer consulted multiple sites (in particular StackOverflow ) in order to better understand the javascript code they were implementing.
-- [StackOverflow](https://stackoverflow.com/ "Link to StackOverflow")
-- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+The developer consulted multiple sites (in particular [StackOverflow](https://stackoverflow.com/ "Link to StackOverflow")) in order to better understand the javascript code they were implementing. Modal was created using a tutorial from [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) youtube channel.
 
 ## Acknowledgements
 - I want to thank my mentor Koko, for her invaluable help and guidance.
