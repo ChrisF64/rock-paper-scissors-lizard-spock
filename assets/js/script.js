@@ -55,7 +55,7 @@ startButton.addEventListener("click", function () {
     document.getElementById("computer-image").style.background = "";
     document.getElementById("quit").style.display = "";
     document.getElementById("start").style.display = "none";
-    document.getElementById("result-para").innerText = "Make your choice using the buttons above and see the result here";
+    document.getElementById("result-para").innerText = "Make your choice using the buttons below and see the result here";
 
 });
 
@@ -297,7 +297,7 @@ function runGame(playType) {
 function resultMsg(resultType) {
     switch (resultType) {
         case "draw":
-            document.getElementById("result-para").innerText = "Its a draw - go again!";
+            document.getElementById("result-para").innerText = "It's a draw - go again!";
             document.getElementById("result-para").style.borderColor = "rgb(241, 206, 50)";
             break;
 

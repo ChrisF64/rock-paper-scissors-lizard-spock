@@ -76,6 +76,7 @@ button {
     border-color: rgb(241, 206, 50);
 }
 
+/* Button Area styling */
 body {
     margin: 0;
     padding: 30px 5px 5px;
@@ -378,7 +379,6 @@ body {
 }
 
 /* screen size styling for less than 550px break-point */
-
 @media screen and (max-width: 550px) {
 
     h1 {
